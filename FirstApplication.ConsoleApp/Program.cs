@@ -5,18 +5,18 @@ namespace FirstApplication.ConsoleApp
 {
     class Program
     {
-       static void Main(string[] args)
+        static void Main(string[] args)
         {
-            string MyName = "Iryna";
-            byte MyAge = 33;
-            bool HaveIApet = false;
-            double MyShoeSize = 36;
-
-            Console.WriteLine("My name is " + MyName);
-            Console.WriteLine("My age is " + MyAge);
-            Console.WriteLine("Do I have a pet? " + HaveIApet);
-            Console.WriteLine("My shoe size is " + MyShoeSize);
-            Console.ReadKey();
+            Console.WriteLine("Please enter your name:");
+            string name = Console.ReadLine();
+            Console.WriteLine("Please enter your age:");
+            int age = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Your name is {name} and your age is {age}");
+            Console.WriteLine("Please enter your birthday:");
+            string birthday = Console.ReadLine();
+            Console.WriteLine($"Your birthday is " + birthday);
+            Console.ReadLine();
         }
+                          
     }
 }
